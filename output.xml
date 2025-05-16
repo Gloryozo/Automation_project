@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.11.5 on win32)" generated="2025-05-16T09:24:35.925157" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.11.5 on win32)" generated="2025-05-16T09:46:15.562867" rpa="false" schemaversion="5">
 <suite id="s1" name="Testcase1" source="D:\Glory Files\Automation prac\glory's_website_project\Testcases\testcase1.robot">
 <test id="s1-t1" name="Valid Login to nopCommerce" line="11">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-16T09:24:36.257765" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/'.</msg>
+<msg time="2025-05-16T09:46:15.927549" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-16T09:24:36.257765" elapsed="2.957911"/>
+<status status="PASS" start="2025-05-16T09:46:15.927549" elapsed="2.974263"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-16T09:24:39.215676" elapsed="0.068079"/>
+<status status="PASS" start="2025-05-16T09:46:18.901812" elapsed="0.042769"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-16T09:24:39.284329" level="INFO">Typing text 'admin@yourstore.com' into text field 'id=Email'.</msg>
+<msg time="2025-05-16T09:46:18.945619" level="INFO">Typing text 'admin@yourstore.com' into text field 'id=Email'.</msg>
 <arg>id=Email</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-16T09:24:39.284329" elapsed="0.293844"/>
+<status status="PASS" start="2025-05-16T09:46:18.944581" elapsed="0.329396"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-16T09:24:39.578173" level="INFO">Typing text 'admin' into text field 'id=Password'.</msg>
+<msg time="2025-05-16T09:46:19.275066" level="INFO">Typing text 'admin' into text field 'id=Password'.</msg>
 <arg>id=Password</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-16T09:24:39.578173" elapsed="0.083258"/>
+<status status="PASS" start="2025-05-16T09:46:19.273977" elapsed="0.072890"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-16T09:24:39.661431" level="INFO">Clicking button 'xpath=//button[contains(@class,'login-button')]'.</msg>
+<msg time="2025-05-16T09:46:19.346867" level="INFO">Clicking button 'xpath=//button[contains(@class,'login-button')]'.</msg>
 <arg>xpath=//button[contains(@class,'login-button')]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-16T09:24:39.661431" elapsed="0.071253"/>
+<status status="PASS" start="2025-05-16T09:46:19.346867" elapsed="0.153306"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<msg time="2025-05-16T09:24:50.039014" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-05-16T09:24:50.039014" level="FAIL">Text 'Dashboard' did not appear in 10 seconds.</msg>
+<msg time="2025-05-16T09:46:29.744966" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-16T09:46:29.744966" level="FAIL">Text 'Dashboard' did not appear in 10 seconds.</msg>
 <arg>${DASHBOARD}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="FAIL" start="2025-05-16T09:24:39.732684" elapsed="10.306330">Text 'Dashboard' did not appear in 10 seconds.</status>
+<status status="FAIL" start="2025-05-16T09:46:19.500173" elapsed="10.247035">Text 'Dashboard' did not appear in 10 seconds.</status>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
 <arg>${DASHBOARD}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" start="2025-05-16T09:24:50.039014" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-05-16T09:46:29.747208" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-05-16T09:24:50.039014" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-05-16T09:46:29.747208" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2025-05-16T09:24:36.257765" elapsed="13.781249">Text 'Dashboard' did not appear in 10 seconds.</status>
+<status status="FAIL" start="2025-05-16T09:46:15.927549" elapsed="13.820675">Text 'Dashboard' did not appear in 10 seconds.</status>
 </test>
-<status status="FAIL" start="2025-05-16T09:24:35.931372" elapsed="14.107642"/>
+<status status="FAIL" start="2025-05-16T09:46:15.578870" elapsed="14.169354"/>
 </suite>
 <statistics>
 <total>
