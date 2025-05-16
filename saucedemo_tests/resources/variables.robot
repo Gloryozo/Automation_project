@@ -1,0 +1,6 @@
+*** Variables ***
+${URL}            https://www.saucedemo.com/
+${USERNAME}       standard_user
+${PASSWORD}       secret_sauce
+${BROWSER}        chrome
+${LOGIN_SUCCESS}  xpath=//span[text()='Products']
